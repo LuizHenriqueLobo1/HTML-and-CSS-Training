@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Degradê</title>
+    <style>
+        /* configuração global */
+        * {
+            height: 100vh;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            background-attachment: fixed;
+        }
+
+        .gradient {
+            height: 500px;
+            width:  500px;
+        }
+
+        #div1 {
+            background-image: linear-gradient(0deg, #282E5C, #4A55A8, #606FDB);
+        }
+
+        #div2 {
+            background-image: radial-gradient(#282E5C, #4A55A8, #606FDB);
+        }
+
+        #div3 {
+            background-image: linear-gradient(90deg, #282E5C, #4A55A8, #606FDB);
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient" id="div1">
+        <p>Degradê 1</p>
+    </div>
+    <div class="gradient" id="div2">
+        <p>Degradê 2</p>
+    </div>
+    <div class="gradient" id="div3">
+        <p>Degradê 3</p>
+    </div>
+</body>
+</html>
